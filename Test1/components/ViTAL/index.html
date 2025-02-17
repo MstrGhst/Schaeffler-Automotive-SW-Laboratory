@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Schaeffler Automotive Laboratory </title>
+	<style>
+		/*style from doorpage_frame_min.css and button from doorpage_css.css*/
+		*{padding:0;margin:0;border:0}body,html{position:relative;background-color:#fff;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%}html{min-height:100%;font-size:62.5%}body *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}blockquote,body,code,dd,div,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,input,label,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0;width:100%}td{vertical-align:top}td img{display:inline}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:400}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}a:active,a:focus{outline:0}q:after,q:before{content:''}img{display:block;max-width:100%;height:auto}a img,img{border:0}abbr,acronym{border:0;font-variant:normal}input,select,textarea{font-family:inherit;font-size:inherit;font-weight:inherit}input:active,input:focus{outline:0}iframe{display:block}button,input[type=button],input[type=file]::-webkit-file-upload-button,input[type=reset],input[type=submit]{border-radius:0}body,html{color:#646464}body,button,caption,div,fieldset,form,input,label,legend,object,optgroup,option,select,td,textarea{font-family:Calibri;font-style:normal;font-weight:400;font-size:1.6rem;letter-spacing:.04em;line-height:1.5;-webkit-hyphens:auto;-epub-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;-o-hyphens:auto;hyphens:auto}input,select,textarea{font-size:inherit}.h1,h1{margin:.6em 0;font-size:3.6rem;line-height:1.2;letter-spacing:.04em}.h1:first-child,h1:first-child{margin-top:0}.h1:last-child,h1:last-child{margin-bottom:0}.h2,h2{margin:1em 0 .6em;font-size:2.8rem;line-height:1.25;letter-spacing:.04em}.h2:first-child,h2:first-child{margin-top:0}.h2:last-child,h2:last-child{margin-bottom:0}.h3,h3{margin:1em 0 .6em;font-size:2rem;line-height:1.3;letter-spacing:.04em}.h3:first-child,h3:first-child{margin-top:0}.h3:last-child,h3:last-child{margin-bottom:0}.h5+.h3,.h5+h3,h5+.h3,h5+h3{margin-top:-.4em}.h4,h4{margin:1.4em 0 1em;font-size:1.8rem;font-weight:700;line-height:1.35;letter-spacing:.04em}.h4:first-child,h4:first-child{margin-top:0}.h4:last-child,h4:last-child{margin-bottom:0}.h5,h5{margin:1.4em 0 1em;font-size:1.8rem;line-height:1.4;letter-spacing:.04em}.h5:first-child,h5:first-child{margin-top:0}.h5:last-child,h5:last-child{margin-bottom:0}.h6,h6{margin:1.6em 0 .6em;font-weight:700;letter-spacing:.04em}.h6:first-child,h6:first-child{margin-top:0}.h6:last-child,h6:last-child{margin-bottom:0}.p,p{margin:0 0 1em}.p:first-child,p:first-child{margin-top:0}.p{font-style:normal;font-weight:400;font-size:1.6rem;letter-spacing:.04em;line-height:1.5}.p:last-child,p:last-child{margin-bottom:0}.h2,.h3,.h4,.h5,.h6,.p,h2,h3,h4,h5,h6,p{max-width:1000px}a{color:#00893d;text-decoration:none;font-size:inherit;transition:color .3s ease-in-out}a:hover{color:#00702b}b,strong{font-weight:700}em,i{font-style:italic}dl,ol,ul{margin:0 0 31px;padding:0 0 0 1.25em}.dl:last-child,.ol:last-child,.ul:last-child,dl:last-child,ol:last-child,ul:last-child{margin-bottom:0}dt,li{margin:0 0 11px}.dt:last-child,.li:last-child,dt:last-child,li:last-child{margin-bottom:0}label{font-size:1.3rem;letter-spacing:.04em;cursor:pointer}.nohyphens{-webkit-hyphens:none;-epub-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;-o-hyphens:none;hyphens:none}.introtxt{font-size:1.8rem;letter-spacing:.04em}.introtxt a{font-size:inherit}.uppercase{text-transform:uppercase;letter-spacing:.1em}.caption{font-size:1.3rem;letter-spacing:.04em}.listheadline{margin:0 0 8px;font-weight:700}.font-highlight,.font-highlight--darker{overflow:hidden;margin:0 0 18px;padding:12px}.font-highlight{background-color:#ebeef0}.font-highlight--darker{background-color:#dde3e6}.font-highlight--alert{background-color:#aa0a05;color:#fff}.font-highlight--darker>:first-child,.font-highlight>:first-child{margin-top:0}.font-highlight--darker>:last-child,.font-highlight>:last-child{margin-bottom:0}.highlight{background-color:#dde3e6;padding:2px}.align-right{text-align:right}.align-left{text-align:left}.align-center,.center{text-align:center}.float_left{float:left}.float_right{float:right}.position_bottom{bottom:0}.position_relative{position:relative}.block{display:block}.overflow_visible{overflow:visible}.hidden{display:none}.hr,hr{clear:both;display:block;height:1px;margin:0 0 18px;line-height:1px;background-color:#cdd3d6}.hr:last-child,hr:last-child{margin-bottom:0}.m-transitions{-webkit-transition:all .4s ease-in-out 0s;-moz-transition:all .4s ease-in-out 0s;-o-transition:all .4s ease-in-out 0s;-ms-transition:all .4s ease-in-out 0s;transition:all .4s ease-in-out 0s}@media screen and (max-width:1024){.m-hide-below-desktop{display:none!important}}@media screen and (max-width:599px){.m-hide-below-tablet{display:none!important}}@media screen and (max-width:1200px){.hide-1200{display:none!important}}@media screen and (max-width:1100px){.hide-1100{display:none!important}}@media screen and (max-width:1000px){.hide-1000{display:none!important}}@media screen and (max-width:900px){.hide-900{display:none!important}}@media screen and (max-width:800px){.hide-800{display:none!important}}@media screen and (max-width:700px){.hide-700{display:none!important}}@media screen and (max-width:600px){.hide-600{display:none!important}}@media screen and (min-width:1200px){.show-1200{display:none!important}}@media screen and (min-width:1100px){.show-1100{display:none!important}}@media screen and (min-width:1000px){.show-1000{display:none!important}}@media screen and (min-width:900px){.show-900{display:none!important}}@media screen and (min-width:800px){.show-800{display:none!important}}@media screen and (min-width:700px){.show-700{display:none!important}}@media screen and (min-width:600px){.show-600{display:none!important}}.header{position:relative;background-color:#fff}.header_wrap{position:relative;max-width:1244px;margin:0 auto}.header_wrap:after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);z-index:105;height:1px;width:100%;max-width:1200px;background-color:#ced5da}.header_wrap_inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 16px}@media screen and (min-width:600px){.header_wrap_inner{padding:0 22px}}.header_meta{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:1.3rem}.header_meta_company,.header_meta_navigation,.header_meta_navigation>.select,.header_meta_navigation>select,.header_meta_navigation_link{font-size:inherit;letter-spacing:.04em}.header_meta_navigation{display:none;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media screen and (min-width:770px){.header_meta_navigation{display:-webkit-box;display:-ms-flexbox;display:flex}}.header_meta_navigation_link{padding-left:12px;color:#646464}.header_meta_navigation_link:active,.header_meta_navigation_link:focus,.header_meta_navigation_link:hover{color:#000}.header_meta_navigation>.select,.header_meta_navigation>select{display:inline-block;width:62px;margin:0}.header_meta_company{padding:2px 16px}@media screen and (min-width:600px){.header_meta_company{padding:2px 22px}}@media screen and (min-width:1024px){.header_meta_company{padding:0 12px 0 0}}@media screen and (max-width:1023px){.header_wrap_inner{padding-top:24px}.header_meta_company{position:absolute;width:100%;left:0;top:0;border-bottom:1px solid #ced5da}}.header_meta_navigation .select select{padding:2px 30px 2px 4px}.header_meta_navigation .select-btn{width:30px}.header .globalsearch-trigger,.header .menu-trigger{line-height:1;padding:12px 12px 12px 0}.header .menu-trigger{margin-left:-4px}@media screen and (min-width:1024px){body.has-desktop-menu .header .globalsearch-trigger{display:none}}.header .logo{-ms-flex-line-pack:end;align-content:flex-end;background-color:transparent;background-repeat:no-repeat;background-position:50% 50%;background-size:contain;margin-left:20px}.logo--schaeffler{width:150px;height:51px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='199.1' height='22.6'%3E%3Cg fill='%2300893d'%3E%3Cpath d='M13.6 10.9a9.15 9.15 0 0 0-4-1.8C8.2 8.7 6.8 8.4 5.8 8c-1.1-.6-1.7-1.1-1.7-2 0-1.7 1.1-2.5 2.7-2.5a4.06 4.06 0 0 1 2.7 1 4.6 4.6 0 0 1 1.3 2.7h3.4V.6h-3.5v1.1a7.11 7.11 0 0 0-4-1.6 6.27 6.27 0 0 0-5.15 2.3A6.62 6.62 0 0 0 .1 6.2a6.63 6.63 0 0 0 2.5 5.4 15.22 15.22 0 0 0 3.3 1.3 23.17 23.17 0 0 1 4 1 2.35 2.35 0 0 1 1.4 2.4 2.86 2.86 0 0 1-2.75 2.8c-2.7 0-4.4-1.8-4.8-4.5H0v7.5h3.55v-1.3a7.88 7.88 0 0 0 4.9 1.7 7.17 7.17 0 0 0 4.9-1.8 6.48 6.48 0 0 0 2-4.9c.1-2.5-.6-3.9-1.7-4.9M34.2 14.5c-1.3 2.4-2.7 4-5.8 4-4.2 0-6.5-3.3-6.6-7.2s2.4-7.2 6.6-7.2a5.8 5.8 0 0 1 3.3 1 4.54 4.54 0 0 1 2 2.7v.1h3.5V.6h-3.5v1.1A9.87 9.87 0 0 0 28.55 0a10.87 10.87 0 0 0-7.3 2.7c-2.35 1.7-3.7 4.5-3.7 8.4a11.58 11.58 0 0 0 3.1 8.2 10.56 10.56 0 0 0 7.8 3.3c4.7 0 8.3-2.5 9.6-7.6v-.3a24.2 24.2 0 0 0-3.8-.2M161.4.3v3.4h2.1v15h-2.1v3.4h16.3v-6.9h-3.6v3.5h-6.3v-6.2h5.8V8.8h-5.8V3.7h6.3v2.6h3.6v-6h-16.3zM155.8 15.3v3.4h-4.6v-15h2.3V.3h-8.9v3.4h2.4v15h-2.4v3.4h14.7v-6.8h-3.5zM187.4 3.7h1.7a9.88 9.88 0 0 1 3 .3 1.91 1.91 0 0 1 1.45 2c0 1.4-.4 2-1.1 2.4a5.67 5.67 0 0 1-2.7.6h-2.1l-.2-5.3zm9.8 15v-4.5a4 4 0 0 0-.4-2.1 4 4 0 0 0-2-1.4 5.21 5.21 0 0 0 3.1-4.8v-.1a4.78 4.78 0 0 0-1-3C195.2.4 192.7.3 191 .3h-9.9v3.4h2.3v14.8h-2.3v3.4h8.5v-3.1h-2.05v-6.2h2a5.83 5.83 0 0 1 2.3.3 1.54 1.54 0 0 1 1.1 1.6v7.6h6.2v-3.4zM59.8 3.7V.3h-8.4v3.4h1.9v5.1h-6.9V3.7h1.9V.3H40v3.4h2.1v15H40v3.4h8.3v-3.4h-1.9v-6.2h6.9v6.2h-1.9v3.4h8.4v-3.4h-2.1v-15h2.1zM124.8.3v3.4h2.3v15h-2.3v3.4h8.8v-3.4h-2.3v-6.2h6.2V8.8h-6.2V3.7h6.5v2.6h3.5v-6h-16.5zM70.4 11.6l2.3-7.2h.1l2.1 7.2zm10.7 7.1l-4.9-15h2.1V.3H67v3.4h2.1L64 18.5h-1.45v3.4h7.5v-3.4h-2l1.1-3.7h6.2l1.1 3.7h-1.7v3.4h7.8v-3.4c0 .2-1.45.2-1.45.2zM85.6.3v3.4h2.2v15h-2.2v3.4h16.3v-6.9h-3.5v3.5H92v-6.2h5.8V8.8H92V3.7h6.4v2.6h3.5v-6H85.6zM105.7.3v3.4h2.3v15h-2.3v3.4h8.8V18.7h-2.3v-6.2h6.4V8.8h-6.4V3.7h6.5v2.6h3.6v-6h-16.6z'/%3E%3C/g%3E%3C/svg%3E")}@media screen and (min-width:600px){.logo--schaeffler{width:200px;height:67px}}.logo-link{display:block;width:100%;height:100%}.stage{height:400px}@media only screen and (min-width:601px){.stage{height:340px}}@media only screen and (min-width:801px){.stage{height:425px}}@media only screen and (min-width:1001px){.stage{height:510px}}@media only screen and (min-width:1001px) and (max-height:900px){.stage{height:425px}}.stage .modaltrigger{background-color:#fff;background-color:rgba(255,255,255,.9)}.container_page_size{max-width:1200px;margin:0 auto}#container_main{padding:50px 16px}@media screen and (min-width:600px){#container_main{padding:50px 22px}}@media print{.header_meta_company{padding-left:0}.logo--schaeffler{background:0 0;width:200px;height:67px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.logo-link{display:block;height:auto!important;width:auto!important}.logo-link:after{display:block;line-height:0;top:0;left:0;content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='199.1' height='22.6'%3E%3Cg fill='%2300893d'%3E%3Cpath d='M13.6 10.9a9.15 9.15 0 0 0-4-1.8C8.2 8.7 6.8 8.4 5.8 8c-1.1-.6-1.7-1.1-1.7-2 0-1.7 1.1-2.5 2.7-2.5a4.06 4.06 0 0 1 2.7 1 4.6 4.6 0 0 1 1.3 2.7h3.4V.6h-3.5v1.1a7.11 7.11 0 0 0-4-1.6 6.27 6.27 0 0 0-5.15 2.3A6.62 6.62 0 0 0 .1 6.2a6.63 6.63 0 0 0 2.5 5.4 15.22 15.22 0 0 0 3.3 1.3 23.17 23.17 0 0 1 4 1 2.35 2.35 0 0 1 1.4 2.4 2.86 2.86 0 0 1-2.75 2.8c-2.7 0-4.4-1.8-4.8-4.5H0v7.5h3.55v-1.3a7.88 7.88 0 0 0 4.9 1.7 7.17 7.17 0 0 0 4.9-1.8 6.48 6.48 0 0 0 2-4.9c.1-2.5-.6-3.9-1.7-4.9M34.2 14.5c-1.3 2.4-2.7 4-5.8 4-4.2 0-6.5-3.3-6.6-7.2s2.4-7.2 6.6-7.2a5.8 5.8 0 0 1 3.3 1 4.54 4.54 0 0 1 2 2.7v.1h3.5V.6h-3.5v1.1A9.87 9.87 0 0 0 28.55 0a10.87 10.87 0 0 0-7.3 2.7c-2.35 1.7-3.7 4.5-3.7 8.4a11.58 11.58 0 0 0 3.1 8.2 10.56 10.56 0 0 0 7.8 3.3c4.7 0 8.3-2.5 9.6-7.6v-.3a24.2 24.2 0 0 0-3.8-.2M161.4.3v3.4h2.1v15h-2.1v3.4h16.3v-6.9h-3.6v3.5h-6.3v-6.2h5.8V8.8h-5.8V3.7h6.3v2.6h3.6v-6h-16.3zM155.8 15.3v3.4h-4.6v-15h2.3V.3h-8.9v3.4h2.4v15h-2.4v3.4h14.7v-6.8h-3.5zM187.4 3.7h1.7a9.88 9.88 0 0 1 3 .3 1.91 1.91 0 0 1 1.45 2c0 1.4-.4 2-1.1 2.4a5.67 5.67 0 0 1-2.7.6h-2.1l-.2-5.3zm9.8 15v-4.5a4 4 0 0 0-.4-2.1 4 4 0 0 0-2-1.4 5.21 5.21 0 0 0 3.1-4.8v-.1a4.78 4.78 0 0 0-1-3C195.2.4 192.7.3 191 .3h-9.9v3.4h2.3v14.8h-2.3v3.4h8.5v-3.1h-2.05v-6.2h2a5.83 5.83 0 0 1 2.3.3 1.54 1.54 0 0 1 1.1 1.6v7.6h6.2v-3.4zM59.8 3.7V.3h-8.4v3.4h1.9v5.1h-6.9V3.7h1.9V.3H40v3.4h2.1v15H40v3.4h8.3v-3.4h-1.9v-6.2h6.9v6.2h-1.9v3.4h8.4v-3.4h-2.1v-15h2.1zM124.8.3v3.4h2.3v15h-2.3v3.4h8.8v-3.4h-2.3v-6.2h6.2V8.8h-6.2V3.7h6.5v2.6h3.5v-6h-16.5zM70.4 11.6l2.3-7.2h.1l2.1 7.2zm10.7 7.1l-4.9-15h2.1V.3H67v3.4h2.1L64 18.5h-1.45v3.4h7.5v-3.4h-2l1.1-3.7h6.2l1.1 3.7h-1.7v3.4h7.8v-3.4c0 .2-1.45.2-1.45.2zM85.6.3v3.4h2.2v15h-2.2v3.4h16.3v-6.9h-3.5v3.5H92v-6.2h5.8V8.8H92V3.7h6.4v2.6h3.5v-6H85.6zM105.7.3v3.4h2.3v15h-2.3v3.4h8.8V18.7h-2.3v-6.2h6.4V8.8h-6.4V3.7h6.5v2.6h3.6v-6h-16.6z'/%3E%3C/g%3E%3C/svg%3E")}}.grid{list-style:none;margin:0 -10px 0 -10px;font-size:0;letter-spacing:0}.grid.m-flip{direction:rtl}.grid-cell{display:inline-block;vertical-align:top;width:100%;padding:0 10px;font-size:16px;font-size:1.6rem}.grid.m-flip>.grid-cell{direction:ltr}.grid-cell.valign-top{vertical-align:top}.grid-cell.valign-center{vertical-align:middle}.grid-cell.valign-bottom{vertical-align:bottom}.grid-cell.m-span-10,.grid-cell.m-span-100{width:100%}.grid-cell.m-span-9{width:90%}.grid-cell.m-span-8{width:80%}.grid-cell.m-span-7{width:70%}.grid-cell.m-span-6{width:60%}.grid-cell.m-span-5,.grid-cell.m-span-50{width:50%}.grid-cell.m-span-4{width:40%}.grid-cell.m-span-3{width:30%}.grid-cell.m-span-2{width:20%}.grid-cell.m-span-1{width:10%}.grid-cell.m-span-25{width:25%}.grid-cell.m-span-33{width:33.332%}.grid-cell.m-span-66{width:66.664%}.grid-cell.m-span-75{width:75%}.grid-div-10>.grid-cell{width:10%}.grid-div-5>.grid-cell{width:20%}.grid-div-4>.grid-cell{width:25%}.grid-div-3>.grid-cell{width:33.32%}.grid-div-2>.grid-cell{width:50%}.grid-div-1>.grid-cell{width:100%}@media screen and (max-width:1200px){.grid.m-break-1200>.grid-cell{display:block;width:100%}}@media screen and (max-width:1100px){.grid.m-break-1100>.grid-cell{display:block;width:100%}}@media screen and (max-width:1000px){.grid.m-break-1000>.grid-cell{display:block;width:100%}}@media screen and (max-width:900px){.grid.m-break-900>.grid-cell{display:block;width:100%}}@media screen and (max-width:800px){.grid.m-break-800>.grid-cell{display:block;width:100%}}@media screen and (max-width:700px){.grid.m-break-700>.grid-cell{display:block;width:100%}}@media screen and (max-width:600px){.grid>.grid-cell{display:block;width:100%}}@media screen and (max-width:600px){.m-break-never>.grid-cell{display:inline-block}.m-break-never>.grid-cell.m-span-10{width:100%}.m-break-never>.grid-cell.m-span-9{width:90%}.m-break-never>.grid-cell.m-span-8{width:80%}.m-break-never>.grid-cell.m-span-7{width:70%}.m-break-never>.grid-cell.m-span-6{width:60%}.m-break-never>.grid-cell.m-span-5{width:50%}.m-break-never>.grid-cell.m-span-4{width:40%}.m-break-never>.grid-cell.m-span-3{width:30%}.m-break-never>.grid-cell.m-span-2{width:20%}.m-break-never>.grid-cell.m-span-1{width:10%}.m-break-never>.grid-cell.m-span-25{width:25%}.m-break-never>.grid-cell.m-span-33{width:33.332%}.m-break-never>.grid-cell.m-span-66{width:66.664%}.m-break-never>.grid-cell.m-span-75{width:75%}.m-break-never.grid-div-10>.grid-cell{width:10%}.m-break-never.grid-div-5>.grid-cell{width:20%}.m-break-never.grid-div-4>.grid-cell{width:25%}.m-break-never.grid-div-3>.grid-cell{width:33.32%}.m-break-never.grid-div-2>.grid-cell{width:50%}.m-break-never.grid-div-1>.grid-cell{width:100%}}.grid>.grid-cell>.grid-content{margin-bottom:18px}.grid:last-child>.grid-cell>.grid-content{margin-bottom:0}@media screen and (max-width:1200px){.grid.m-break-1200>.grid-cell>.grid-content{margin-bottom:18px}.grid.m-break-1200:last-child>.grid-cell:last-child>.grid-content{margin-bottom:0}}@media screen and (max-width:1100px){.grid.m-break-1100>.grid-cell>.grid-content{margin-bottom:18px}.grid.m-break-1100:last-child>.grid-cell:last-child>.grid-content{margin-bottom:0}}@media screen and (max-width:1000px){.grid.m-break-1000>.grid-cell>.grid-content{margin-bottom:18px}.grid.m-break-1000:last-child>.grid-cell:last-child>.grid-content{margin-bottom:0}}@media screen and (max-width:900px){.grid.m-break-900>.grid-cell>.grid-content{margin-bottom:18px}.grid.m-break-900:last-child>.grid-cell:last-child>.grid-content{margin-bottom:0}}@media screen and (max-width:800px){.grid.m-break-800>.grid-cell>.grid-content{margin-bottom:18px}.grid.m-break-800:last-child>.grid-cell:last-child>.grid-content{margin-bottom:0}}@media screen and (max-width:700px){.grid.m-break-700>.grid-cell>.grid-content{margin-bottom:18px}.grid.m-break-700:last-child>.grid-cell:last-child>.grid-content{margin-bottom:0}}@media screen and (max-width:600px){.grid:last-child>.grid-cell>.grid-content{margin-bottom:18px}.grid:last-child>.grid-cell:last-child>.grid-content{margin-bottom:0}.grid.m-break-never>.grid-cell>.grid-content{margin-bottom:18px}.grid.m-break-never:last-child>.grid-cell>.grid-content{margin-bottom:0}}.page-title{padding:0 16px}@media (min-width:600px){.page-title{padding:0 22px}}.page-title>.container_page_size{padding-top:24px;padding-bottom:24px}.page-title.has-spare-space>.container_page_size{padding-top:60px}.page-title .introtxt,.page-title h1,.page-title h2,.page-title h3,.page-title h4,.page-title h5,.page-title h6{max-width:1000px}.page-title h1>.h4,.page-title h1>.h5{display:block}.footer{padding:0 16px}@media screen and (min-width:600px){.footer{padding:0 22px}}.footer-section{padding:24px 0;position:relative}.footer-section:first-child{border-bottom:1px solid #ced5da;padding-bottom:10px}.footer-section:last-child{padding-top:0}.footer-section .grid.m-break-600 .grid-cell{margin-bottom:32px}.footer-section-hl{display:inline-block;margin:1.4em 0 1em;font-size:1.8rem;font-weight:700;line-height:1.35;letter-spacing:.04em;color:inherit}.footer-section-hl:active,.footer-section-hl:focus,.footer-section-hl:hover{color:#000}.footer-list{margin-bottom:18px;padding:0}.footer-list-item{list-style:none;margin:6px 0}.footer-list-item:first-child{margin-top:0}.footer-list-item:last-child{margin-bottom:0}.footer-list-link{display:block;color:inherit}.footer-list-link:active,.footer-list-link:focus,.footer-list-link:hover{color:#000}.footer-meta{font-size:1.2rem}@media screen and (min-width:600px){.footer-meta{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}}.footer-linklist{list-style:none;padding:0;font-size:0}@media screen and (min-width:600px){.footer-linklist{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}}.footer-linklist-item:first-child{border-left:none}@media screen and (min-width:600px){.footer-linklist-item:after{content:'|';padding:0 6px;font-size:1.3rem}.footer-linklist-item:last-child:after{content:none}}.footer-linklist-item a{color:inherit;font-size:1.3rem}.footer-linklist-item a:hover{color:#000}.footer-copyright{display:block;padding-top:18px;font-size:1.2rem}@media screen and (min-width:600px){.footer-copyright{padding-top:0;padding-left:18px;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto}}button::-moz-focus-inner{padding:0;border:0;width:auto;overflow:visible}.btn,.button,button{display:inline-flex;flex-direction:row;justify-content:space-between;align-items:center;margin:0 0 18px 0;padding:5px 20px;border:1px solid #00893d;background-color:#00893d;color:#fff;text-decoration:none;cursor:pointer;transition:background-color .3s ease-in-out,color .3s ease-in-out}.btn:active,.btn:focus,.btn:hover,.button:active,.button:focus,.button:hover{background-color:#005f14;color:#fff}.btn:last-child,.button:last-child{margin-bottom:0}.big-btn{min-width:40%}
+	</style>
+</head>
+
+<body>
+	<div id="header" class="header">
+		<div class="header_wrap">
+			<div class="header_wrap_inner">
+				<div class="header_meta">
+				</div>
+				<div class="logo logo--schaeffler" id="addresser_left">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="page-title" class="page-title">
+		<div class="container_page_size">
+			<h1>Schaeffler Automotive Laboratory</h1>
+		</div>
+	</div>
+
+	<div id="container_main">
+		<div class="container_page_size">
+			<div class="grid">
+				<div class="grid-cell m-span-4">
+					<div class="grid-content">
+						<h2> Remote Control / Command </h2>
+						<form id="buttonFormTrunk" method="post">
+							<button type="submit" id="buttonTrunk" class="big-btn" name="button"
+								value="Open Trunk">Open Trunk</button>
+						</form>
+						<form id="buttonFormALights" method="post">
+							<button type="submit" id="buttonALights" class="big-btn" name="button"
+								value="Ambiental Lights On">Ambiental Lights On</button>
+						</form>
+						<form id="buttonFormFind" method="post">
+							<button type="submit" id="buttonFind" class="big-btn" name="button"
+								value="Find My Car">Find My Car</button>
+						</form>
+						<form id="buttonFormHonk" method="post">
+							<button type="submit" id="buttonHonk" class="big-btn" name="button" value="Honk On">Honk
+								On</button>
+						</form>
+						<form id="buttonFormSecurity" method="post">
+							<button type="submit" id="buttonSecurity" class="big-btn" name="button"
+								value="Security On">Security On</button>
+						</form>
+						<form id="buttonFormDoor" method="post">
+							<button type="submit" id="buttonDoor" class="big-btn" name="button"
+								value="Unlock Door">Unlock Door</button>
+						</form>
+						<form id="buttonFormHLights" method="post">
+							<button type="submit" id="buttonHLights" class="big-btn" name="button"
+								value="Head Lights On">Head Lights On</button>
+						</form>
+						<form id="buttonFormFan" method="post">
+							<button type="submit" id="buttonFan" class="big-btn" name="button" value="Fan On">Fan
+								On</button>
+						</form>
+					</div>
+				</div>
+				<div class="grid-cell m-span-4">
+					<div class="grid-content">
+						<h2> Information Display </h2>
+						<form method="post">
+							<input type="number" id="user-temperature" placeholder="Enter temperature th:"
+								name="user-temp" required>
+							<input id="temp-submit" type="submit" class="button" value="Apply">
+						</form>
+						<br />
+						<p id="humidity-level"> Humidity </p>
+						<p id="heat-index"> Real feel </p>
+						<p id="photo-R-level"> Photo-R level </p>
+						<p id="temperature-level"> Temperature </p>
+						<p id="locked-unlocked-status"> Door: Locked </p>
+						<p id="driver-seat-status"> Driver seat unoccupied </p>
+						<p id="distance"> Distance </p>
+					</div>
+				</div>
+
+				<div class="grid-cell m-span-2">
+					<div class="grid-content">
+						<h2> Test BSW </h2>
+						<h3> Shift register </h3>
+						<form id="buttonFormShiftReg" method="post">
+							<button type="submit" id="buttonShiftReg" class="big-btn" name="button"
+								value="ShiftReg">Shift
+								Register On</button>
+						</form>
+						<form id="buttonFormRLed" method="post">
+							<button type="submit" id="buttonRLed" class="big-btn" name="button" value="R">R
+								Led On</button>
+						</form>
+						<form id="buttonFormGLed" method="post">
+							<button type="submit-" id="buttonGLed" class="big-btn" name="button" value="G">G
+								Led On</button>
+						</form>
+						<form id="buttonFormBLed" method="post">
+							<button type="submit" id="buttonBLed" class="big-btn" name="button" value="B">B
+								Led On</button>
+						</form>
+						<h3> Motors </h3>
+						<form id="buttonFormDCMotor" action="" method="post">
+							<h4>DCM1</h4>
+							<button onclick="incrementDCM1()">+</button>
+							<button onclick="decrementDCM1()">-</button>
+							<input name="dcmi" type="hidden" value="0" />
+							<span id="dcm1"></span>
+						</form>
+						<form id="buttonFormDCMotor" method="post">
+							<h4>DCM2</h4>
+							<button onclick="decrementDCM2()">-</button>
+							<button onclick="incrementDCM2()">+</button>
+							<input name="dcmii" type="hidden" value="0" />
+							<span id="dcm2"></span>
+						</form>
+						<form id="buttonFormServo" method="post">
+							<h3>Servo</h3>
+							<button onclick="decrementServo()" ><</button>
+							<button onclick="incrementServo()" >></button>
+							<input name="servomotor" type="hidden" value="0" />
+							<span id="servomotordegrees"></span>
+						</form>
+						<form id="buttonFormServo" method="post">
+							<h3>Buzzer</h3>
+							<button onclick="incrementBuzzer()">+</button>
+							<button onclick="decrementBuzzer()">-</button>
+							<input name="buzzer" type="hidden" value="0" />
+							<span id="buzzerintensity"></span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="container_page_size">
+			<div class="footer-section">
+			</div>
+			<div class="footer-section footer-meta">
+				<div class="footer-copyright">
+					&copy; Schaeffler AG
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		/******************** POST functions ********************/
+		/********** FAN **********/
+		document.getElementById('buttonFormFan').addEventListener('submit', buttonEventFan);
+		if (localStorage.getItem("valueFan") == null) localStorage.setItem("valueFan", "Fan On");
+		document.getElementById('buttonFan').innerHTML = localStorage.getItem("valueFan");
+		document.getElementById('buttonFan').value = localStorage.getItem("valueFan");
+		function buttonEventFan() {
+			if (localStorage.getItem("valueFan") === "Fan On") localStorage.setItem("valueFan", "Fan Off");
+			else localStorage.setItem("valueFan", "Fan On");
+		}
+
+		/********** TRUNK **********/
+		document.getElementById('buttonFormTrunk').addEventListener('submit', buttonEventTrunk);
+		if (localStorage.getItem("valueTrunk") == null) localStorage.setItem("valueTrunk", "Open Trunk");
+		document.getElementById('buttonTrunk').innerHTML = localStorage.getItem("valueTrunk");
+		document.getElementById('buttonTrunk').value = localStorage.getItem("valueTrunk");
+		function buttonEventTrunk() {
+			if (localStorage.getItem("valueTrunk") === "Open Trunk") localStorage.setItem("valueTrunk", "Close Trunk");
+			else localStorage.setItem("valueTrunk", "Open Trunk");
+		}
+
+		/********** HEAD LIGHTS **********/
+		document.getElementById('buttonFormHLights').addEventListener('submit', buttonEventHLights);
+		if (localStorage.getItem("valueHLights") == null) localStorage.setItem("valueHLights", "Head Lights On");
+		document.getElementById('buttonHLights').innerHTML = localStorage.getItem("valueHLights");
+		document.getElementById('buttonHLights').value = localStorage.getItem("valueHLights");
+		function buttonEventHLights() {
+			if (localStorage.getItem("valueHLights") === "Head Lights On") localStorage.setItem("valueHLights", "Head Lights Off");
+			else localStorage.setItem("valueHLights", "Head Lights On");
+		}
+
+		/********** AMBIENTAL LIGHTS **********/
+		document.getElementById('buttonFormALights').addEventListener('submit', buttonEventALights);
+		if (localStorage.getItem("valueALights") == null) localStorage.setItem("valueALights", "Ambiental Lights On");
+		document.getElementById('buttonALights').innerHTML = localStorage.getItem("valueALights");
+		document.getElementById('buttonALights').value = localStorage.getItem("valueALights");
+		function buttonEventALights() {
+			if (localStorage.getItem("valueALights") === "Ambiental Lights On") localStorage.setItem("valueALights", "Ambiental Lights Off");
+			else localStorage.setItem("valueALights", "Ambiental Lights On");
+		}
+
+		/********** Honk **********/
+		document.getElementById('buttonFormHonk').addEventListener('submit', buttonEventHonk);
+		if (localStorage.getItem("valueHonk") == null) localStorage.setItem("valueHonk", "Honk On");
+		document.getElementById('buttonHonk').innerHTML = localStorage.getItem("valueHonk");
+		document.getElementById('buttonHonk').value = localStorage.getItem("valueHonk");
+		function buttonEventHonk() {
+			if (localStorage.getItem("valueHonk") === "Honk On") localStorage.setItem("valueHonk", "Honk Off");
+			else localStorage.setItem("valueHonk", "Honk On");
+		}
+
+		/********** LIGHTS **********/
+		document.getElementById('buttonFormSecurity').addEventListener('submit', buttonEventSecurity);
+		if (localStorage.getItem("valueSecurity") == null) localStorage.setItem("valueSecurity", "Security On");
+		document.getElementById('buttonSecurity').innerHTML = localStorage.getItem("valueSecurity");
+		document.getElementById('buttonSecurity').value = localStorage.getItem("valueSecurity");
+		function buttonEventSecurity() {
+			if (localStorage.getItem("valueSecurity") === "Security On") localStorage.setItem("valueSecurity", "Security Off");
+			else localStorage.setItem("valueSecurity", "Security On");
+		}
+
+		/********** DOOR **********/
+		document.getElementById('buttonFormDoor').addEventListener('submit', buttonEventDoor);
+		if (localStorage.getItem("valueDoor") == null) localStorage.setItem("valueDoor", "Unlock Door");
+		document.getElementById('buttonDoor').innerHTML = localStorage.getItem("valueDoor");
+		document.getElementById('buttonDoor').value = localStorage.getItem("valueDoor");
+		function buttonEventDoor() {
+			if (localStorage.getItem("valueDoor") === "Unlock Door") localStorage.setItem("valueDoor", "Lock Door");
+			else localStorage.setItem("valueDoor", "Unlock Door");
+		}
+
+		/********** Shift Register **********/
+		document.getElementById('buttonFormShiftReg').addEventListener('submit', buttonEventShiftReg);
+		if (localStorage.getItem("valueShiftReg") == null) localStorage.setItem("valueShiftReg", "Shift Register On");
+		document.getElementById('buttonShiftReg').innerHTML = localStorage.getItem("valueShiftReg");
+		document.getElementById('buttonShiftReg').value = localStorage.getItem("valueShiftReg");
+		function buttonEventShiftReg() {
+			if (localStorage.getItem("valueShiftReg") === "Shift Register On") localStorage.setItem("valueShiftReg", "Shift Register Off");
+			else localStorage.setItem("valueShiftReg", "Shift Register On");
+		}
+
+
+		/********** Shift Register R Led **********/
+		document.getElementById('buttonFormRLed').addEventListener('submit', buttonEventRLed);
+		if (localStorage.getItem("valueRLed") == null) localStorage.setItem("valueRLed", "R Led On");
+		document.getElementById('buttonRLed').innerHTML = localStorage.getItem("valueRLed");
+		document.getElementById('buttonRLed').value = localStorage.getItem("valueRLed");
+		function buttonEventRLed() {
+			if (localStorage.getItem("valueRLed") === "R Led On") localStorage.setItem("valueRLed", "R Led Off");
+			else localStorage.setItem("valueRLed", "R Led On");
+		}
+
+		/********** Shift Register G Led **********/
+		document.getElementById('buttonFormGLed').addEventListener('submit', buttonEventGLed);
+		if (localStorage.getItem("valueGLed") == null) localStorage.setItem("valueGLed", "G Led On");
+		document.getElementById('buttonGLed').innerHTML = localStorage.getItem("valueGLed");
+		document.getElementById('buttonGLed').value = localStorage.getItem("valueGLed");
+		function buttonEventGLed() {
+			if (localStorage.getItem("valueGLed") === "G Led On") localStorage.setItem("valueGLed", "G Led Off");
+			else localStorage.setItem("valueGLed", "G Led On");
+		}
+
+		/********** Shift Register B Led **********/
+		document.getElementById('buttonFormBLed').addEventListener('submit', buttonEventBLed);
+		if (localStorage.getItem("valueBLed") == null) localStorage.setItem("valueBLed", "B Led On");
+		document.getElementById('buttonBLed').innerHTML = localStorage.getItem("valueBLed");
+		document.getElementById('buttonBLed').value = localStorage.getItem("valueBLed");
+		function buttonEventBLed() {
+			if (localStorage.getItem("valueBLed") === "B Led On") localStorage.setItem("valueBLed", "B Led Off");
+			else localStorage.setItem("valueBLed", "B Led On");
+		}
+
+		/********** BSW Test - DC Motor **********/
+		f();
+
+		document.getElementById("dcm1").innerHTML = sessionStorage.countlocal1;
+		document.querySelector('input[name="dcmi"]').value = sessionStorage.countlocal1;
+		document.getElementById("dcm2").innerHTML = sessionStorage.countlocal2;
+		document.querySelector('input[name="dcmii"]').value = sessionStorage.countlocal2;
+		document.getElementById("buzzerintensity").innerHTML = sessionStorage.countlocal3;
+		document.querySelector('input[name="buzzer"]').value = sessionStorage.countlocal3;
+		document.getElementById("servomotordegrees").innerHTML = sessionStorage.countlocal4;
+		document.querySelector('input[name="servomotor"]').value = sessionStorage.countlocal4;
+
+		function f() {
+			if (!sessionStorage.countlocal1) {
+				sessionStorage.countlocal1 = 0;
+			}
+			if (!sessionStorage.countlocal2) {
+				sessionStorage.countlocal2 = 0;
+			}
+			if (!sessionStorage.countlocal3) {
+				sessionStorage.countlocal3 = 0;
+			}
+			if (!sessionStorage.countlocal4) {
+				sessionStorage.countlocal4 = 0;
+			}
+		}
+
+		function incrementDCM1() {
+			if (Number(sessionStorage.countlocal1) <= 80 && Number(sessionStorage.countlocal2) == 0) {
+				sessionStorage.countlocal1 = (Number(sessionStorage.countlocal1) + 20);
+				document.querySelector('input[name="dcmi"]').value = sessionStorage.countlocal1;
+				document.getElementById("dcm1").innerHTML = sessionStorage.countlocal1;
+			}
+		}
+
+		function decrementDCM1() {
+			if (Number(sessionStorage.countlocal1) >= 20 && Number(sessionStorage.countlocal2) == 0) {
+				sessionStorage.countlocal1 = (Number(sessionStorage.countlocal1) - 20);
+				document.querySelector('input[name="dcmi"]').value = sessionStorage.countlocal1;
+				document.getElementById("dcm1").innerHTML = sessionStorage.countlocal1;
+
+			}
+		}
+
+		function incrementDCM2() {
+			if (sessionStorage.countlocal2 && Number(sessionStorage.countlocal2) <= 80 && Number(sessionStorage.countlocal1) == 0) {
+				sessionStorage.countlocal2 = (Number(sessionStorage.countlocal2) + 20);
+				document.querySelector('input[name="dcmii"]').value = sessionStorage.countlocal2;
+				document.getElementById("dcm2").innerHTML = sessionStorage.countlocal2;
+			}
+		}
+
+		function decrementDCM2() {
+			if (sessionStorage.countlocal2 && Number(sessionStorage.countlocal2) >= 20 && Number(sessionStorage.countlocal1) == 0) {
+				sessionStorage.countlocal2 = (Number(sessionStorage.countlocal2) - 20);
+				document.querySelector('input[name="dcmii"]').value = sessionStorage.countlocal2;
+				document.getElementById("dcm2").innerHTML = sessionStorage.countlocal2;
+			}
+		}
+
+		function incrementBuzzer() {
+			if (sessionStorage.countlocal3 && Number(sessionStorage.countlocal3) <= 80) {
+				sessionStorage.countlocal3 = (Number(sessionStorage.countlocal3) + 20);
+				document.querySelector('input[name="buzzer"]').value = sessionStorage.countlocal3;
+				document.getElementById("buzzerintensity").innerHTML = sessionStorage.countlocal3;
+			}
+		}
+
+		function decrementBuzzer() {
+			if (sessionStorage.countlocal3 && Number(sessionStorage.countlocal3) >= 20) {
+				sessionStorage.countlocal3 = (Number(sessionStorage.countlocal3) - 20);
+				document.querySelector('input[name="buzzer"]').value = sessionStorage.countlocal3;
+				document.getElementById("buzzerintensity").innerHTML = sessionStorage.countlocal3;
+			}
+		}
+
+		function incrementServo() {
+			if (sessionStorage.countlocal4 && Number(sessionStorage.countlocal4) <= 90) {
+				sessionStorage.countlocal4 = (Number(sessionStorage.countlocal4) + 90);
+				document.querySelector('input[name="servomotor"]').value = sessionStorage.countlocal4;
+				document.getElementById("servomotordegrees").innerHTML = sessionStorage.countlocal4;
+			}
+		}
+
+		function decrementServo() {
+			if (sessionStorage.countlocal4 && Number(sessionStorage.countlocal4) >= 90) {
+				sessionStorage.countlocal4 = (Number(sessionStorage.countlocal4) - 90);
+				document.querySelector('input[name="servomotor"]').value = sessionStorage.countlocal4;
+				document.getElementById("servomotordegrees").innerHTML = sessionStorage.countlocal4;
+			}
+		}
+
+		/******************** GET functions ********************/
+		let DataValue = ["", "", "", "", "", "", ""];
+		if (localStorage.getItem("DataValue0") == null) localStorage.setItem("DataValue0", DataValue[0]);
+		if (localStorage.getItem("DataValue1") == null) localStorage.setItem("DataValue1", DataValue[1]);
+		if (localStorage.getItem("DataValue2") == null) localStorage.setItem("DataValue2", DataValue[2]);
+		if (localStorage.getItem("DataValue3") == null) localStorage.setItem("DataValue3", DataValue[3]);
+		if (localStorage.getItem("DataValue4") == null) localStorage.setItem("DataValue4", DataValue[4]);
+		if (localStorage.getItem("DataValue5") == null) localStorage.setItem("DataValue5", DataValue[5]);
+		if (localStorage.getItem("DataValue6") == null) localStorage.setItem("DataValue6", DataValue[6]);
+
+		document.getElementById("temperature-level").innerHTML = "Temperature: " + localStorage.getItem("DataValue0") + "&degC";
+		document.getElementById("humidity-level").innerHTML = "Humidity: " + localStorage.getItem("DataValue1") + "%";
+		document.getElementById("heat-index").innerHTML = "Real feel: " + localStorage.getItem("DataValue2") + "&degC";
+		document.getElementById("photo-R-level").innerHTML = "Photo-R level: " + localStorage.getItem("DataValue3");
+		document.getElementById("locked-unlocked-status").innerHTML = "Door: " + localStorage.getItem("DataValue4");
+		document.getElementById("driver-seat-status").innerHTML = "Driver seat: " + localStorage.getItem("DataValue5");
+		document.getElementById("distance").innerHTML = "Distance: " + localStorage.getItem("DataValue6");
+
+		function updateData() {
+			let request = new XMLHttpRequest();
+			request.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					DataValue = this.responseText.split('\n');
+					localStorage.setItem("DataValue0", DataValue[0]);
+					localStorage.setItem("DataValue1", DataValue[1]);
+					localStorage.setItem("DataValue2", DataValue[2]);
+					localStorage.setItem("DataValue3", DataValue[3]);
+					localStorage.setItem("DataValue4", DataValue[4]);
+					localStorage.setItem("DataValue5", DataValue[5]);
+					localStorage.setItem("DataValue6", DataValue[6]);
+				}
+			};
+			request.open('GET', 'data.txt', true);
+			request.send();
+		}
+
+		function displayData() {
+			document.getElementById("temperature-level").innerHTML = "Temperature: " + localStorage.getItem("DataValue0") + "&degC";
+			document.getElementById("humidity-level").innerHTML = "Humidity: " + localStorage.getItem("DataValue1") + "%";
+			document.getElementById("heat-index").innerHTML = "Real feel: " + localStorage.getItem("DataValue2") + "&degC";
+			document.getElementById("photo-R-level").innerHTML = "Photo-R level: " + localStorage.getItem("DataValue3");
+			document.getElementById("locked-unlocked-status").innerHTML = "Door: " + localStorage.getItem("DataValue4");
+			document.getElementById("driver-seat-status").innerHTML = "Driver seat: " + localStorage.getItem("DataValue5");
+			document.getElementById("distance").innerHTML = "Distance: " + localStorage.getItem("DataValue6");
+		}
+
+		setInterval(updateData, 1000); // server get/post handlers in 500ms task
+		setInterval(displayData, 0);
+	</script>
+</body>
+
+</html>
