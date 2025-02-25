@@ -29,7 +29,7 @@
 #include "ASW/Locking_System/locking_system.h"
 #include "ASW/Security/security.h"
 #include "ASW/Trunk/trunk.h"
-
+#include "BSW/HAL/DC_Motor/dc_motor.h"
 #include "nvs_flash.h"
 
 static const char *TAG = "SRVL SCHEDULER";
@@ -59,6 +59,7 @@ void vTask100ms(void)
 {	
 	/* Call Shift register functionalty */
 	ESP_LOGI(TAG, "100ms" );
+	DCMOT_vChangeSpeed(DC_MOTOR_LOW_SPEED);
 }
 
 void vTask200ms(void)

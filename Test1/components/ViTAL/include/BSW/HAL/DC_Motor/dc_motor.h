@@ -18,7 +18,7 @@ void DCMOT_vChangeSpeed(uint32_t u32DCMotorSpeed);
 
 /* Motor PWMs for speeds */
 #define DC_MOTOR_STOP 0
-#define DC_MOTOR_LOW_SPEED 15000       // 15 ms
+#define DC_MOTOR_LOW_SPEED 6000       // 6 ms
 #define DC_MOTOR_FULL_SPEED 20000      // 20 ms
 
 #endif

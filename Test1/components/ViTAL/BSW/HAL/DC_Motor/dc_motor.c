@@ -27,5 +27,20 @@ static const char *TAG = "HAL DC MOTOR";
  ******************************************************************************/
 void DCMOT_vChangeSpeed(uint32_t u32DCMotorSpeed)
 {
-
+    if(u32DCMotorSpeed==DC_MOTOR_STOP)
+    {
+        PWM_vSetDutyCycle(DC_MOTOR_PWM_CHANNEL,DC_MOTOR_STOP);
+    }
+    else if(u32DCMotorSpeed==DC_MOTOR_FULL_SPEED)
+    {
+        PWM_vSetDutyCycle(DC_MOTOR_PWM_CHANNEL,DC_MOTOR_FULL_SPEED);
+    }
+    else if(u32DCMotorSpeed==DC_MOTOR_LOW_SPEED)
+    {
+        PWM_vSetDutyCycle(DC_MOTOR_PWM_CHANNEL,DC_MOTOR_LOW_SPEED);
+    }
+    else
+    {
+        printf("Eroare");
+    }
 }
