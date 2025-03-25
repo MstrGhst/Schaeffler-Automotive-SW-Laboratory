@@ -31,6 +31,8 @@
 #include "ASW/Trunk/trunk.h"
 #include "BSW/HAL/DC_Motor/dc_motor.h"
 #include "nvs_flash.h"
+#include "BSW/HAL/Proximity_Sensor/proximity_sensor.h"
+#include "BSW/MCAL/GPIO/gpio.h"
 
 static const char *TAG = "SRVL SCHEDULER";
 static char *timestamp;
@@ -64,6 +66,7 @@ void vTask100ms(void)
 
 void vTask200ms(void)
 {
+	
 	ESP_LOGI(TAG, "200ms" );
 }
 
@@ -85,6 +88,7 @@ void vTask1000ms(void)
 
 void vTask2000ms(void)
 {
+	PROX_u16Read();
 	ESP_LOGI(TAG, "2000ms" );
 }
 
