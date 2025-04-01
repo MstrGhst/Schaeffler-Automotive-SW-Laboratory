@@ -18,3 +18,15 @@
 extern COM_GET_struct g_GET_DataStructure;
 
 static const char *TAG = "HAL PHOTO RESISTOR";
+
+uint16_t PHRES_u16Read(void)
+{
+    return ADC_u16Read();
+}
+
+void PHRES_vTaskCalculate(void)
+{
+    uint16_t x=PHRES_u16Read();
+    g_GET_DataStructure.u16PhotoRes=x;
+    ESP_LOGI(TAG,"Valoarea este: %d",PHRES_u16Read());
+}

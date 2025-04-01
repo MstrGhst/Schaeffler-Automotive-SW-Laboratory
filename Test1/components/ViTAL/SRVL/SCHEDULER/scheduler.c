@@ -89,6 +89,7 @@ void vTask1000ms(void)
 void vTask2000ms(void)
 {
 	PROX_u16Read();
+	PHRES_vTaskCalculate();
 	ESP_LOGI(TAG, "2000ms" );
 }
 

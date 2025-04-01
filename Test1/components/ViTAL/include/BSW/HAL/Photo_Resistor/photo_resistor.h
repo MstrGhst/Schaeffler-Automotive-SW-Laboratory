@@ -14,4 +14,7 @@
 
 #include "global.h"
 
+uint16_t PHRES_u16Read(void);
+void PHRES_vTaskCalculate(void);
+
 #endif
