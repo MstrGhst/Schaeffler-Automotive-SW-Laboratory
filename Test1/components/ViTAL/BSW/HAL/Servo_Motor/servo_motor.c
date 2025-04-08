@@ -14,3 +14,8 @@
 #include "BSW/MCAL/PWM/pwm.h"
 
 static const char *TAG = "HAL SERVO MOTOR";
+
+void SERVO_vChangeAngle(uint32_t u32ServoAngle)
+{
+    PWM_vSetDutyCycle(SERVO_MOTOR_PWM_CHANNEL, u32ServoAngle);
+}

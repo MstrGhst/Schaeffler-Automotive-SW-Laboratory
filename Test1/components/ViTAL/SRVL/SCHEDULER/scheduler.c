@@ -33,6 +33,8 @@
 #include "nvs_flash.h"
 #include "BSW/HAL/Proximity_Sensor/proximity_sensor.h"
 #include "BSW/MCAL/GPIO/gpio.h"
+#include "BSW/HAL/Servo_Motor/servo_motor.h"
+#include "BSW/HAL/Buzzer/buzzer.h"
 
 static const char *TAG = "SRVL SCHEDULER";
 static char *timestamp;
@@ -61,19 +63,26 @@ void vTask100ms(void)
 {	
 	/* Call Shift register functionalty */
 	ESP_LOGI(TAG, "100ms" );
-	DCMOT_vChangeSpeed(DC_MOTOR_LOW_SPEED);
+	//DCMOT_vChangeSpeed(DC_MOTOR_LOW_SPEED);
 }
 
 void vTask200ms(void)
 {
-	
+	//SERVO_vChangeAngle(500);
+	//SERVO_vChangeAngle(1500);
+	//SERVO_vChangeAngle(2500);
 	ESP_LOGI(TAG, "200ms" );
 }
 
 void vTask500ms(void)
 {
+	BUZZER_vChangeDutyCycle(1000);
+	ets_delay_us(1000000);
+	BUZZER_vChangeDutyCycle(4000);
+	ets_delay_us(1000000);
+	BUZZER_vChangeDutyCycle(5000);
 	ESP_LOGI(TAG, "500ms" );
-	COM_vTaskProcessServer();
+	//COM_vTaskProcessServer();
 }
 
 void vTask800ms(void)

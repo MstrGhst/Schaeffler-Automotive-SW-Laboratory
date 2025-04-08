@@ -14,4 +14,10 @@
 
 #include "global.h"
 
+#define _0deg 500
+#define _90deg 1500
+#define _180deg 2500
+
+void SERVO_vChangeAngle(uint32_t u32ServoAngle);
+
 #endif

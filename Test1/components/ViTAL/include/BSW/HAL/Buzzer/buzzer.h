@@ -14,4 +14,10 @@
 
 #include "global.h"
 
+#define _20 1000
+#define _40 4000
+#define _80 5000
+
+void BUZZER_vChangeDutyCycle(uint32_t u32BuzzerDutyCycle);
+
 #endif
